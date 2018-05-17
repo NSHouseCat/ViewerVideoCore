@@ -1,6 +1,6 @@
 //
 //  SettingsManager.swift
-//  IDX-VideoDemo
+//  ViewerVideoCore
 //
 //  Created by Andrew on 5/6/18.
 //  Copyright © 2018 Andrew Nordahl. All rights reserved.
@@ -27,6 +27,9 @@ class SettingsManager {
     
     //Video that appears when face is detected
     let interstitialVideo = VideoFile(videoName: "Cat", videoFiletype: "mp4")
+    
+    //Shows tracking preview window to aid in device placement, disable once desired viewing angle is set
+    let trackingPreviewEnabled = true
 
 }
 

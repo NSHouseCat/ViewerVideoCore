@@ -13,6 +13,7 @@
 		49C2E4A820A008CC00D34E07 /* Cat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49C2E4A720A008CC00D34E07 /* Cat.mp4 */; };
 		49C2E4AA20A011A800D34E07 /* VideoLicense in Resources */ = {isa = PBXBuildFile; fileRef = 49C2E4A920A011A800D34E07 /* VideoLicense */; };
 		49C2E4AC20A0135E00D34E07 /* AmbientSquares.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49C2E4AB20A0135E00D34E07 /* AmbientSquares.mp4 */; };
+		49C2E4B320AB333500D34E07 /* CameraCapturePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2E4B220AB333500D34E07 /* CameraCapturePreviewView.swift */; };
 		49CBC962209AD57400298FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CBC961209AD57400298FE7 /* AppDelegate.swift */; };
 		49CBC964209AD57400298FE7 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CBC963209AD57400298FE7 /* TrackingViewController.swift */; };
 		49CBC967209AD57400298FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CBC965209AD57400298FE7 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		49C2E4A720A008CC00D34E07 /* Cat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cat.mp4; sourceTree = "<group>"; };
 		49C2E4A920A011A800D34E07 /* VideoLicense */ = {isa = PBXFileReference; lastKnownFileType = text; path = VideoLicense; sourceTree = "<group>"; };
 		49C2E4AB20A0135E00D34E07 /* AmbientSquares.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmbientSquares.mp4; sourceTree = "<group>"; };
+		49C2E4B220AB333500D34E07 /* CameraCapturePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapturePreviewView.swift; sourceTree = "<group>"; };
 		49CBC95E209AD57400298FE7 /* ViewerVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewerVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CBC961209AD57400298FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49CBC963209AD57400298FE7 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				49C2E4A2209EF26B00D34E07 /* SettingsManager.swift */,
 				49CBC963209AD57400298FE7 /* TrackingViewController.swift */,
 				49CBC979209AF3FB00298FE7 /* LoopedVideoViewController.swift */,
+				49C2E4B220AB333500D34E07 /* CameraCapturePreviewView.swift */,
 				49CBC97D209C353900298FE7 /* InterstitialVideoViewController.swift */,
 				49CBC968209AD57600298FE7 /* Assets.xcassets */,
 				49CBC965209AD57400298FE7 /* Main.storyboard */,
@@ -178,6 +181,7 @@
 			files = (
 				49C2E4A1209E42D900D34E07 /* InterstitialVideoViewController.swift in Sources */,
 				49C2E4A3209EF26B00D34E07 /* SettingsManager.swift in Sources */,
+				49C2E4B320AB333500D34E07 /* CameraCapturePreviewView.swift in Sources */,
 				49CBC97A209AF3FB00298FE7 /* LoopedVideoViewController.swift in Sources */,
 				49CBC964209AD57400298FE7 /* TrackingViewController.swift in Sources */,
 				49CBC962209AD57400298FE7 /* AppDelegate.swift in Sources */,

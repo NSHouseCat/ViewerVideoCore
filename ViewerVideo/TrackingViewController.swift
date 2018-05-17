@@ -1,6 +1,6 @@
 //
 //  TrackingViewController.swift
-//  IDX-VideoDemo
+//  ViewerVideoCore
 //
 //  Created by Andrew on 5/6/18.
 //  Copyright © 2018 Andrew Nordahl. All rights reserved.
@@ -129,5 +129,4 @@ extension TrackingViewController {
             return UIImageOrientation.downMirrored.rawValue
         }
     }
-    
 }

@@ -1,6 +1,6 @@
 //
 //  VideoPlayerViewController.swift
-//  IDX-VideoDemo
+//  ViewerVideoCore
 //
 //  Created by Andrew on 5/3/18.
 //  Copyright © 2018 Andrew Nordahl. All rights reserved.
@@ -13,8 +13,9 @@ class LoopedVideoViewController: AVPlayerViewController {
     
     //MARK: - Variables
     var loopedVideoPaused: Bool = true
+    var previewIsVisible: Bool = false
     var countdownTimer: Timer?
-    
+
     //MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,7 @@ class LoopedVideoViewController: AVPlayerViewController {
         setDelegates()
         player?.play()
         loopedVideoPaused = false
+        showCapturePreview()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -80,7 +82,11 @@ class LoopedVideoViewController: AVPlayerViewController {
         countdownTimer?.invalidate()
         countdownTimer = nil
         DispatchQueue.main.async {
-            self.contentOverlayView?.subviews.forEach({ $0.removeFromSuperview() })
+            self.contentOverlayView?.subviews.forEach({
+                if $0 is UILabel {
+                    $0.removeFromSuperview()
+                }
+            })
         }
     }
     
@@ -95,6 +101,18 @@ class LoopedVideoViewController: AVPlayerViewController {
     func setDelegates() {
         if let parentViewController = self.presentingViewController as? TrackingViewController {
             parentViewController.trackingDelegate = self
+        }
+    }
+    
+    //MARK: -
+    func showCapturePreview() {
+        if SettingsManager.sharedInstance.trackingPreviewEnabled && previewIsVisible == false {
+            previewIsVisible = true
+            if let parentViewController = self.presentingViewController as? TrackingViewController {
+                DispatchQueue.main.async {
+                    self.contentOverlayView?.addSubview(CameraCapturePreviewView.init(withSession: parentViewController.session!))
+                }
+            }
         }
     }
 }
